@@ -1,0 +1,28 @@
+{
+  "name": "xendit-qa-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/results.json"
+    }
+  },
+  "author": "Kix Almazan",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-image-diff-js": "^1.23.0",
+    "multiple-cucumber-html-reporter": "^3.3.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress-visual-regression": "^3.0.0"
+  }
+}
